@@ -32,7 +32,7 @@ print(increased_by_one) #[3,5,7]
 #Display numbers excluding 0 from the below list
 numbers = [2,0,5,3,1,0,5,0,0]
 no_zero = [n for n in numbers if n!=0]
-print(no_zero)
+print(no_zero) #[2, 5, 3, 1, 5]
 
 
 #uppercase only if it is pizza
