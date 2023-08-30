@@ -11,7 +11,7 @@ cats.add('Cheetah')
 print(cats) #they are unordered
 
 cats.add('Tiger')
-print(cats) #doesn't allow duplicates
+print(cats) #sets doesn't allow duplicates
 
 birds = {'owl', 'parrot', 'crow'} #create set
 
