@@ -13,6 +13,7 @@ class Author:
         else:
             self.books.append(title) #if not, add the book to the list
 
+
 #2nd way to solve this. Below code counts the duplicates and makes a list of it and then remove the duplicate from the list.
 #this is longer version of above -- if title in self.books:
     '''self.books.append(title)
