@@ -13,18 +13,19 @@ class Author:
         else:
             self.books.append(title) #if not, add the book to the list
 
-#ignore below code. Below code counts the duplicates and makes a list of it and then remove the duplicate from the list.
+#2nd way to solve this. Below code counts the duplicates and makes a list of it and then remove the duplicate from the list.
 #this is longer version of above -- if title in self.books:
     '''self.books.append(title)
         duplicate = [b for b in self.books if self.books.count(b)>1]
         if len(duplicate) != 0:
-        print('Book', duplicate[0], 'already published!')
-        self.books.remove(title)'''  
+            print('Book', duplicate[0], 'already published!')
+            self.books.remove(title)'''  
 
         
 #for concise python coding instead of IF statement version
     def __str__(self):
         #add book with comma between each books added
+        #2nd way + covert list to set and then back to list to remove the duplicates
         titles = ', '.join(self.books) or 'No published books' # data = a(truthy) or b(falsy)
         return f'Author: {self.name}, Books: {titles}' #print statement
 
