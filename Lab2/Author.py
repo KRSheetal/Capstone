@@ -13,8 +13,8 @@ class Author:
         else:
             self.books.append(title) #if not, add the book to the list
 
-
-#2nd way to solve this. Below code counts the duplicates and makes a list of it and then remove the duplicate from the list.
+#2nd way to solve this. 
+#Below code counts the duplicates and makes a list of it and then remove the duplicate from the list.
 #this is longer version of above -- if title in self.books:
     '''self.books.append(title)
         duplicate = [b for b in self.books if self.books.count(b)>1]
@@ -27,6 +27,8 @@ class Author:
     def __str__(self):
         #add book with comma between each books added
         #2nd way + covert list to set and then back to list to remove the duplicates
+        # duplicates_removed = (list(set(self.books))
+        #titles = ', '.join(duplicates) or 'No published books'
         titles = ', '.join(self.books) or 'No published books' # data = a(truthy) or b(falsy)
         return f'Author: {self.name}, Books: {titles}' #print statement
 
@@ -48,10 +50,9 @@ def main():
     rowling.publish('Harry Potter and the Philosopher\'s Stone')
     print(rowling) #prints the list of books
 
+main()#call main function
 
-main()
-
-#---------OR try this-------------#
+#---------OR try this for consice onliner code to make a list-------------#
 
 '''    def __str__(self):
         if self.books:
