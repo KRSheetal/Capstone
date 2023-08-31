@@ -19,14 +19,14 @@ class Student: #you do not need to add (self) in dataclass.
 #define main function
 def main():
     #add the data to the Student class
-    alex = Student('Alex', 'abcedf', 3.7)
+    alex = Student('Alex', 'Sg7424', 3.7)
     print(alex.name)
     print(alex.school_id)
     print(alex.gpa)
     print(alex)
 
 #you can add any number of students' data
-    sam = Student('Sam', 'qwerty', 3.7)
+    sam = Student('Sam', 'De8472', 3.7)
     print(sam)
 
 if __name__ == '__main__': #for multiple python files are imported into python file adding this line helps
