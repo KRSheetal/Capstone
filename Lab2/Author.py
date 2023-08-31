@@ -9,18 +9,19 @@ class Author:
     def publish(self, title):
         #find if its a duplicate book
         if title in self.books:
-            print(f'Book \'{title}\' already exists!') #if yes, show error message
+            print(f'Error! Book \'{title}\' already exists!') #if yes, show error message
         else:
             self.books.append(title) #if not, add the book to the list
 
 #2nd way to solve this. 
 #Below code counts the duplicates and makes a list of it and then remove the duplicate from the list.
 #this is longer version of above -- if title in self.books:
-    '''self.books.append(title)
-        duplicate = [b for b in self.books if self.books.count(b)>1]
-        if len(duplicate) != 0:
-            print('Book', duplicate[0], 'already published!')
-            self.books.remove(title)'''  
+    ''' self.books.append(title) #add the book title to the books list
+        duplicate = [b for b in self.books if self.books.count(b)>1] #find the duplicate book by counting the number of same books in the list and makes a list of duplicates 
+        
+        if len(duplicate) != 0: #if the duplicate list has books in the list and not equal to zero
+            print('Book', duplicate[0], 'already published!') #prints an error 
+            self.books.remove(title) # and removes the added book(duplicate) from the books list''' 
 
         
 #for concise python coding instead of IF statement version
@@ -37,7 +38,9 @@ class Author:
 def main():
     chetan_bhagat = Author('Chetan Bhagat')
     chetan_bhagat.publish('Five Point Someone')
+    chetan_bhagat.publish('2 States')
     chetan_bhagat.publish('Half Girlfriend')
+    chetan_bhagat.publish('2 States')
     chetan_bhagat.publish('Five Point Someone')
     chetan_bhagat.publish('One Indian Girl')
     chetan_bhagat.publish('2 States')
