@@ -10,6 +10,12 @@ characters such as # or + or ".  Or, would it be easier to check that the name o
 
 Test your program with different example inputs, and comment your code. '''
 
+def banner():
+   """Display program name"""
+   message = 'Awesome camelCase program!'
+   stars = '*' *len(message)
+   print(f'\n{stars} \n{message} \n{stars} \n')
+
 
 #define a function to convert the input sentence to camelCase
 def sentence_to_camelCase(sentence): # 'This is a sentence' -- INPUT
@@ -23,6 +29,7 @@ def sentence_to_camelCase(sentence): # 'This is a sentence' -- INPUT
 
 
 #call the function here to convert the sentence to camel case
+banner()
 inputSentence = input('Enter sentence: ') #ask user to enter a sentence
 camelCased = sentence_to_camelCase(inputSentence) #call the function with input sentencec
 print(camelCased) #print the returned camel cased sentence
