@@ -10,6 +10,7 @@ characters such as # or + or ".  Or, would it be easier to check that the name o
 
 Test your program with different example inputs, and comment your code. '''
 
+'''camelCase converter program!'''
 def banner():
    """Display program name, using stars"""
    message = 'Awesome camelCase program!'
