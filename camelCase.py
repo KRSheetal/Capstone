@@ -11,12 +11,13 @@ characters such as # or + or ".  Or, would it be easier to check that the name o
 Test your program with different example inputs, and comment your code. '''
 
 def banner():
-   """Display program name"""
+   """Display program name, using stars"""
    message = 'Awesome camelCase program!'
    stars = '*' *len(message)
    print(f'\n{stars} \n{message} \n{stars} \n')
 
 def instructions():
+   "Display instruction for how to use the program"
    print('Enter a sentence and this program will convert it to camelCase')
 
 #define a function to convert the input sentence to camelCase
