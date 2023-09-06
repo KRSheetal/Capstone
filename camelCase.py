@@ -16,6 +16,8 @@ def banner():
    stars = '*' *len(message)
    print(f'\n{stars} \n{message} \n{stars} \n')
 
+def instructions():
+   print('Enter a sentence and this program will convert it to camelCase')
 
 #define a function to convert the input sentence to camelCase
 def sentence_to_camelCase(sentence): # 'This is a sentence' -- INPUT
@@ -30,6 +32,7 @@ def sentence_to_camelCase(sentence): # 'This is a sentence' -- INPUT
 
 #call the function here to convert the sentence to camel case
 banner()
+instructions()
 inputSentence = input('Enter sentence: ') #ask user to enter a sentence
 camelCased = sentence_to_camelCase(inputSentence) #call the function with input sentencec
 print(camelCased) #print the returned camel cased sentence
